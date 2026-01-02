@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog - Ruiqian (Richie) Li. Thoughts on religion, nationalism, research, and academia.">
+  <title>Blog | Ruiqian (Richie) Li, Ph.D.</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ----
+       Header & Navigation
+  ---- -->
+  <header id="header">
+    <nav class="container">
+      <a href="index.html" class="logo">Richie<span>Li</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#research">Research</a></li>
+        <li><a href="index.html#publications">Publications</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ----
+       Page Header
+  ---- -->
+  <div class="page-header">
+    <div class="container">
+      <h1>Blog</h1>
+      <p class="lead">Occasional thoughts on research, religion, politics, and academic life.</p>
+    </div>
+  </div>
+
+  <!-- ----
+       Blog Posts List
+  ---- -->
+  <main class="container" style="padding: var(--space-lg) var(--space-md);">
+    <div class="blog-grid">
+      
+      <!-- Sample Blog Post 1 -->
+      <article class="blog-card">
+        <div class="blog-card-image">
+          <img src="https://via.placeholder.com/400x300/E8D5CE/1B3A4B?text=Blog" alt="Blog post image">
+        </div>
+        <div class="blog-card-content">
+          <span class="blog-card-date">January 2, 2026</span>
+          <h2 class="blog-card-title">
+            <a href="blog/sample-post.html">Welcome to My New Website</a>
+          </h2>
+          <p class="blog-card-excerpt">
+            After years of relying on institutional profiles, I finally built my own academic website. 
+            Here's why personal web presence matters for researchers today.
+          </p>
+          <div class="blog-card-tags">
+            <span>Academia</span>
+            <span>Personal</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Sample Blog Post 2 (Placeholder) -->
+      <article class="blog-card">
+        <div class="blog-card-image">
+          <img src="https://via.placeholder.com/400x300/1B3A4B/FDFBF7?text=Research" alt="Blog post image">
+        </div>
+        <div class="blog-card-content">
+          <span class="blog-card-date">Coming Soon</span>
+          <h2 class="blog-card-title">
+            <a href="#">Understanding the Two Faces of Christian Nationalism</a>
+          </h2>
+          <p class="blog-card-excerpt">
+            A non-technical summary of my research on how Americans imagine a "Christian nation" 
+            in fundamentally different ways—and why it matters.
+          </p>
+          <div class="blog-card-tags">
+            <span>Research</span>
+            <span>Christian Nationalism</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Sample Blog Post 3 (Placeholder) -->
+      <article class="blog-card">
+        <div class="blog-card-image">
+          <img src="https://via.placeholder.com/400x300/C45C3E/FDFBF7?text=Methods" alt="Blog post image">
+        </div>
+        <div class="blog-card-content">
+          <span class="blog-card-date">Coming Soon</span>
+          <h2 class="blog-card-title">
+            <a href="#">Tips for Survey Research in R</a>
+          </h2>
+          <p class="blog-card-excerpt">
+            Practical advice from five years working with the Baylor Religion Survey and ARDA. 
+            Code snippets, workflow tips, and lessons learned.
+          </p>
+          <div class="blog-card-tags">
+            <span>Methods</span>
+            <span>R</span>
+            <span>Surveys</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- ----
+       Footer
+  ---- -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ruiqian (Richie) Li. Built with care.</p>
+    </div>
+  </footer>
+
+  <!-- ----
+       Scripts
+  ---- -->
+  <script>
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to my new academic website - Ruiqian (Richie) Li">
+  <title>Welcome to My New Website | Ruiqian (Richie) Li</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- ----
+       Header & Navigation
+  ---- -->
+  <header id="header">
+    <nav class="container">
+      <a href="../index.html" class="logo">Richie<span>Li</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#research">Research</a></li>
+        <li><a href="../index.html#publications">Publications</a></li>
+        <li><a href="../cv.html">CV</a></li>
+        <li><a href="../blog.html" class="active">Blog</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ----
+       Blog Post Content
+  ---- -->
+  <article class="blog-post">
+    <header class="blog-post-header">
+      <h1>Welcome to My New Website</h1>
+      <p class="blog-post-meta">January 2, 2026 · 3 min read</p>
+    </header>
+    
+    <div class="blog-post-content">
+      <p>
+        After years of relying on institutional profile pages and scattered social media presences, 
+        I finally took the plunge and built my own academic website. If you're reading this, 
+        welcome—and thank you for stopping by.
+      </p>
+      
+      <h2>Why Build a Personal Site?</h2>
+      
+      <p>
+        As academics, we move around. From graduate school to postdocs to (hopefully) more 
+        permanent positions, our institutional affiliations change. But our research identity 
+        shouldn't have to fragment across different university profile systems each time we 
+        move.
+      </p>
+      
+      <p>
+        A personal website gives me a stable home base—a single URL I can share that will 
+        follow me throughout my career. It's also a space where I can present my work the way 
+        I want, rather than fitting it into a standardized template.
+      </p>
+      
+      <h2>What You'll Find Here</h2>
+      
+      <p>
+        This site houses my core professional information: my research interests, publications, 
+        and CV. But I've also added a blog section where I plan to share more informal thoughts 
+        about my work, the research process, and academic life in general.
+      </p>
+      
+      <p>
+        Some topics I hope to write about:
+      </p>
+      
+      <ul style="margin-left: 1.5rem; margin-bottom: var(--space-md);">
+        <li>Non-technical summaries of my research on Christian nationalism</li>
+        <li>Practical tips for survey research and data analysis in R</li>
+        <li>Reflections on navigating academia as an interdisciplinary scholar</li>
+        <li>Occasional thoughts on religion, politics, and American culture</li>
+      </ul>
+      
+      <h2>A Note on My Research</h2>
+      
+      <p>
+        My work sits at the intersection of sociology and political science, with a focus on 
+        how religious identities intersect with nationalism and public opinion in America. 
+        Most recently, I've been developing a framework for understanding the "duality" of 
+        Christian nationalism—the idea that Americans who want a "Christian nation" actually 
+        mean very different things by that phrase.
+      </p>
+      
+      <blockquote>
+        Some envision a Christian civil society, grounded in traditional values but separate 
+        from state power. Others want an explicitly Christian government that enforces religious 
+        and ethnic boundaries. These are very different political projects with very different 
+        implications.
+      </blockquote>
+      
+      <p>
+        I'm excited to share more about this research here, in a format more accessible than 
+        academic journals typically allow.
+      </p>
+      
+      <h2>Get in Touch</h2>
+      
+      <p>
+        If you have questions about my research, want to discuss potential collaborations, 
+        or just want to say hello, please don't hesitate to reach out. You can find my 
+        contact information on the <a href="../index.html#contact">main page</a>.
+      </p>
+      
+      <p>
+        Thanks for reading, and I look forward to building this space over time.
+      </p>
+      
+      <p><em>— Richie</em></p>
+    </div>
+  </article>
+
+  <!-- Back to blog link -->
+  <div class="container" style="text-align: center; padding-bottom: var(--space-lg);">
+    <a href="../blog.html" style="font-size: 0.9rem;">← Back to all posts</a>
+  </div>
+
+  <!-- ----
+       Footer
+  ---- -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ruiqian (Richie) Li. Built with care.</p>
+    </div>
+  </footer>
+
+  <!-- ----
+       Scripts
+  ---- -->
+  <script>
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
